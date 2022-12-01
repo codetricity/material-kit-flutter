@@ -132,16 +132,18 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 16),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.defaultButton,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: MaterialColors.defaultButton,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -156,16 +158,18 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
-                    textColor: Colors.white,
-                    color: MaterialColors.primary,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: MaterialColors.primary,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
+                    ),
                     onPressed: () {
                       // Respond to button press
                       Navigator.pushReplacementNamed(context, '/home');
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0),
-                    ),
                     child: Padding(
                         padding: EdgeInsets.only(
                             left: 16.0, right: 16.0, top: 12, bottom: 12),
@@ -180,7 +184,7 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     textColor: Colors.white,
                     color: MaterialColors.info,
                     onPressed: () {
@@ -204,7 +208,7 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     textColor: Colors.white,
                     color: MaterialColors.success,
                     onPressed: () {
@@ -228,7 +232,7 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     textColor: Colors.white,
                     color: MaterialColors.warning,
                     onPressed: () {
@@ -252,7 +256,7 @@ class _ComponentsState extends State<Components> {
                 child: Padding(
                   padding:
                       const EdgeInsets.only(left: 34.0, right: 34.0, top: 8),
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     textColor: Colors.white,
                     color: MaterialColors.error,
                     onPressed: () {
